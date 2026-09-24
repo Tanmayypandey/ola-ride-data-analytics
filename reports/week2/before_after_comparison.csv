@@ -1,0 +1,6 @@
+metric,before_cleaning,after_cleaning,action
+Rows,150000,150000,Removed confirmed exact duplicates only
+Exact duplicate rows,0,0,Exact duplicate removal
+Missing values,1123500,1171500,Structural values preserved and unexpected values flagged
+Duplicate original booking IDs,1233,1233,Preserved and unique analytical record ID created
+Invalid records,0,0,Flagged for review instead of silent deletion

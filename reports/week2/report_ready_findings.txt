@@ -1,0 +1,50 @@
+OLA DATA COLLECTION AND CLEANING FRAMEWORK
+Generated: 24-09-2026 12:52:48
+
+DATA SOURCE
+Source file: ola_cleaned.csv
+Collection method: Existing CSV dataset from Ola Ride Data Analytics project.
+
+DATASET SIZE
+Rows before cleaning: 150,000
+Rows after cleaning: 150,000
+Columns before cleaning: 21
+Columns after framework implementation: 48
+
+DATA QUALITY FINDINGS
+Missing values before cleaning: 1,123,500
+Exact duplicates before cleaning: 0
+Exact duplicates after cleaning: 0
+Repeated original booking IDs: 1,233
+Invalid records flagged: 0
+Outlier records flagged: 12,084
+Date conversion failures: 0
+Time conversion failures: 0
+
+QUALITY SCORES
+Required-field completeness: 100.00%
+Validity rate: 100.00%
+Unique analytical record rate: 100.00%
+Overall data-quality score: 100.00%
+
+CLEANING DECISIONS
+1. Structural missing values were preserved.
+2. Unexpected missing values were flagged by booking status.
+3. Exact duplicate rows were removed.
+4. Repeated booking IDs were preserved because they may represent separate analytical observations.
+5. A unique booking_record_id was created.
+6. Invalid values were flagged for review.
+7. IQR outliers were flagged but not automatically deleted.
+8. Original project datasets and Power BI files were not modified.
+
+RISK CONTROLS
+- Raw and existing analytical files remain unchanged.
+- Week 2 output is stored separately.
+- Status-aware missing-value checks prevent incorrect imputation.
+- Unique analytical IDs reduce double-counting risk.
+- Invalid-value flags protect rating and revenue analysis.
+- Outlier flags prevent accidental deletion of genuine high-value rides.
+- Customer identifiers should not be shown in public reports.
+
+FINAL OUTPUT
+C:\Users\hp\Desktop\ola_ride_dataAnalysis\data\week2_output\ola_week2_analysis_ready.csv

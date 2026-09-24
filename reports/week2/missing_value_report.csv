@@ -1,0 +1,22 @@
+column_name,missing_count,missing_percentage,classification,cleaning_action
+date,0,0.0,Requires validation,Review required-field rules
+time,0,0.0,Requires validation,Review required-field rules
+booking_id,0,0.0,Requires validation,Review required-field rules
+booking_status,0,0.0,Requires validation,Review required-field rules
+customer_id,0,0.0,Requires validation,Review required-field rules
+vehicle_type,0,0.0,Requires validation,Review required-field rules
+pickup_location,0,0.0,Requires validation,Review required-field rules
+drop_location,0,0.0,Requires validation,Review required-field rules
+avg_vtat,10500,7.0,Requires validation,Review required-field rules
+avg_ctat,48000,32.0,Requires validation,Review required-field rules
+cancelled_rides_by_customer,139500,93.0,Requires validation,Review required-field rules
+reason_for_cancelling_by_customer,139500,93.0,Structural or status-dependent,Preserve and validate by booking status
+cancelled_rides_by_driver,123000,82.0,Requires validation,Review required-field rules
+driver_cancellation_reason,123000,82.0,Structural or status-dependent,Preserve and validate by booking status
+incomplete_rides,141000,94.0,Requires validation,Review required-field rules
+incomplete_rides_reason,141000,94.0,Structural or status-dependent,Preserve and validate by booking status
+booking_value,48000,32.0,Requires validation,Review required-field rules
+ride_distance,48000,32.0,Structural or status-dependent,Preserve and validate by booking status
+driver_ratings,57000,38.0,Structural or status-dependent,Preserve and validate by booking status
+customer_rating,57000,38.0,Structural or status-dependent,Preserve and validate by booking status
+payment_method,48000,32.0,Structural or status-dependent,Preserve and validate by booking status
